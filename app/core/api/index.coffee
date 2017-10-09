@@ -3,6 +3,7 @@ module.exports = {
   apcsp: require('./apcsp')
   analyticsLogEvents: require('./analytics-log-events')
   campaigns: require('./campaigns')
+  clas: require('./clas')
   classrooms: require('./classrooms')
   courses: require('./courses')
   courseInstances: require('./course-instances')
