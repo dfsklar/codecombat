@@ -7,6 +7,7 @@ module.exports = {
   classrooms: require('./classrooms')
   courses: require('./courses')
   courseInstances: require('./course-instances')
+  files: require('./files')
   levels: require('./levels')
   levelSessions: require('./level-sessions')
   markdown: require('./markdown')
