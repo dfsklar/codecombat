@@ -17,6 +17,7 @@ module.exports = {
   'views/admin/AnalyticsView': function () { return import(/* webpackChunkName: "admin" */ 'views/admin/AnalyticsView') },
   'views/admin/AnalyticsSubscriptionsView': function () { return import(/* webpackChunkName: "admin" */ 'views/admin/AnalyticsSubscriptionsView') },
   'views/admin/AdminLevelHintsView': function () { return import(/* webpackChunkName: "admin" */ 'views/admin/AdminLevelHintsView') },
+  'views/admin/AdminSubCancellationsView': function () { return import(/* webpackChunkName: "admin" */ 'views/admin/AdminSubCancellationsView') },
   'views/admin/SchoolCountsView': function () { return import(/* webpackChunkName: "admin" */ 'views/admin/SchoolCountsView') },
   'views/admin/SchoolLicensesView': function () { return import(/* webpackChunkName: "admin" */ 'views/admin/SchoolLicensesView') },
   'views/admin/BaseView': function () { return import(/* webpackChunkName: "admin" */ 'views/admin/BaseView') },
