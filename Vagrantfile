@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.hostname = "coco-dev"
 
-  config.vm.network "forwarded_port", guest: 3000, host: 13000
+  config.vm.network "forwarded_port", guest: 3022, host: 13000
   config.vm.network "forwarded_port", guest: 9485, host: 19485
 
   config.vm.define "default" do |default|

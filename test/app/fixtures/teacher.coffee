@@ -24,7 +24,7 @@ module.exports = new User(
     "earned": {
       "gems": 0
     },
-    "referrer": "http://localhost:3000/",
+    "referrer": "http://localhost:3022/",
     "activity": {
       "login": {
         "last": "2016-03-07T19:57:05.007Z",

@@ -170,7 +170,7 @@ module.exports = class MainAdminView extends RootView
       if application.isProduction()
         @freeSubLink = "https://codecombat.com/account/subscription?_ppc=#{model.code}"
       else
-        @freeSubLink = "http://localhost:3000/account/subscription?_ppc=#{model.code}"
+        @freeSubLink = "http://localhost:3022/account/subscription?_ppc=#{model.code}"
       @render?()
     options.error = (model, response, options) =>
       console.error 'Failed to create prepaid', response
@@ -193,7 +193,7 @@ module.exports = class MainAdminView extends RootView
       if application.isProduction()
         @freeSubLink = "https://codecombat.com/account/prepaid?_ppc=#{model.code}"
       else
-        @freeSubLink = "http://localhost:3000/account/prepaid?_ppc=#{model.code}"
+        @freeSubLink = "http://localhost:3022/account/prepaid?_ppc=#{model.code}"
       @render?()
     options.error = (model, response, options) =>
       console.error 'Failed to create prepaid', response

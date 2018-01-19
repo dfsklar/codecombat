@@ -185,13 +185,13 @@ module.exports = class Handler
     # if it's not a text search but the user is an admin, let him try stuff anyway
     else if req.user?.isAdmin()
       # admins can send any sort of query down the wire
-      # Example URL: http://localhost:3000/db/user?filter[anonymous]=true
+      # Example URL: http://localhost:3022/db/user?filter[anonymous]=true
       filter = {}
       filter[key] = JSON.parse(val) for own key, val of req.query.filter when key not in specialParameters if 'filter' of req.query
       query = @modelClass.find(filter)
 
       # Conditions are chained query functions, for example: query.find().limit(20).sort('-dateCreated')
-      # Example URL: http://localhost:3000/db/user?conditions[limit]=20&conditions[sort]=-dateCreated
+      # Example URL: http://localhost:3022/db/user?conditions[limit]=20&conditions[sort]=-dateCreated
       hasLimit = false
       try
         for own key, val of req.query.conditions

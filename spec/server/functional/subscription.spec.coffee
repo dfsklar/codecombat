@@ -1236,8 +1236,8 @@ describe 'POST /db/user/:handle/paypal', ->
                   "value":"0"
               },
               "max_fail_attempts":"0",
-              "return_url":"http://localhost:3000/paypal/subscribe-callback",
-              "cancel_url":"http://localhost:3000/paypal/cancel-callback",
+              "return_url":"http://localhost:3022/paypal/subscribe-callback",
+              "cancel_url":"http://localhost:3022/paypal/cancel-callback",
               "auto_bill_amount":"YES",
               "initial_fail_amount_action":"CONTINUE"
             }

@@ -16,7 +16,7 @@ config.timeout = parseInt(process.env.COCO_TIMEOUT) or 60*1000
 
 config.chinaDomain = "cn.codecombat.com;ccombat.cn;contributors.codecombat.com"
 config.brazilDomain = "br.codecombat.com;contributors.codecombat.com"
-config.port = process.env.COCO_PORT or process.env.COCO_NODE_PORT or process.env.PORT  or 3000
+config.port = process.env.COCO_PORT or process.env.COCO_NODE_PORT or process.env.PORT  or 3022
 config.ssl_port = process.env.COCO_SSL_PORT or process.env.COCO_SSL_NODE_PORT or 3443
 config.cloudflare =
   token: process.env.COCO_CLOUDFLARE_API_KEY or ''
@@ -114,8 +114,8 @@ config.isProduction = config.mongo.host isnt 'localhost'
 
 # Domains (without subdomain prefix, with port number) for main hostname (usually codecombat.com)
 # and unsafe web-dev iFrame content (usually codecombatprojects.com).
-config.mainHostname = process.env.COCO_MAIN_HOSTNAME or 'localhost:3000'
-config.unsafeContentHostname = process.env.COCO_UNSAFE_CONTENT_HOSTNAME or 'localhost:3000'
+config.mainHostname = process.env.COCO_MAIN_HOSTNAME or 'localhost:3022'
+config.unsafeContentHostname = process.env.COCO_UNSAFE_CONTENT_HOSTNAME or 'localhost:3022'
 
 if process.env.COCO_PICOCTF
   config.picoCTF = true
